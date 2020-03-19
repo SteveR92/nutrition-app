@@ -1,0 +1,28 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+
+}
+
+.search-bar-container input {
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    color: #56ab2f;
+    width: 100%;
+}
+
+.item-brand {
+    width: 100%;
+}
+
+.item-brand h3 {
+    text-align: left;
+    margin-left: 5%;
+    padding: 0;
+    line-height: 10%;
+}

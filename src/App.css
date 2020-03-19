@@ -1,0 +1,140 @@
+@media only screen and (max-width: 600px) {
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #56ab2f, #a8e063);
+  background-attachment: fixed;
+}
+/* 
+.spec-food-container {
+  position: relative;
+
+} */
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#homepage-icon {
+  transform: translateY(10%);
+}
+
+.top-container {
+  padding-top: 10%;
+}
+
+}
+
+@media only screen and (min-width: 601px) {
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #56ab2f, #a8e063);
+    background-attachment: fixed;
+  }
+  /* 
+  .spec-food-container {
+    position: relative;
+  
+  } */
+  
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  #homepage-icon {
+    transform: translateY(10%);
+  }
+  
+  .top-container {
+    padding-top: 10%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 992px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #56ab2f, #a8e063);
+    background-attachment: fixed;
+
+  }
+  /* 
+  .spec-food-container {
+    position: relative;
+  
+  } */
+  
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 5rem;
+  }
+  
+  #homepage-icon {
+    transform: translateY(10%);
+  }
+  
+  .top-container {
+    padding-top: 10%;
+  }
+  
+  }
+  
+  @media only screen and (min-width: 601px) {
+    body {
+      background-image: linear-gradient(to right, #56ab2f, #a8e063);
+      background-attachment: fixed;
+    }
+
+    .not-mounted {
+      overflow: hidden;
+    }
+
+    .mounted {
+      overflow: visible;
+    }
+    .container {
+      height: 100vh;
+      width: 100vw;
+      background-image: linear-gradient(to right, #56ab2f, #a8e063);
+      background-attachment: fixed;
+    }
+
+    /* 
+    .spec-food-container {
+      position: relative;
+    
+    } */
+    
+    h1 {
+      padding: 0;
+      margin: 0;
+      color: white;
+      text-align: center;
+      padding-top: 3%;
+    }
+    
+    #homepage-icon {
+      transform: translateY(10%);
+    }
+    
+    .top-container {
+      padding-top: 10%;
+    }
+    
+    }
