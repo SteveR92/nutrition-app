@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/foodlist.css'
 import '../components/table.css'
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
+
 
 
 export default function FoodList(props) {
-    console.log(props)
+
   
     const foods = props['searchResults']
     const results = foods.slice(0, 10)
@@ -40,7 +39,7 @@ export default function FoodList(props) {
                     const id = foodId[index]
                     const brand = brandOwner[index]
 
-                    return <Link to={`/${id}`} className="link"><li><span className="item">{des}</span> <span className="brand">{brand}</span></li></Link>
+                    return <Link to={`/${id}`} key={id} className="link"><li><span className="item">{des}</span> <span className="brand">{brand}</span></li></Link>
                     
         
                 })

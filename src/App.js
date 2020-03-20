@@ -1,6 +1,5 @@
 import React from 'react';
-import { PropTypes } from 'react'
-import { BrowserRouter, Route, Switch, Link, Redirect, withRouter } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import SearchBar from './components/SearchBar'
 import FoodList from './components/FoodList'
 import SpecFoods from './components/SpecFoods'
@@ -13,6 +12,9 @@ import './App.css';
 
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 library.add(faAppleAlt, faArrowLeft)
+
+
+
 
 
 class App extends React.Component {
@@ -39,12 +41,12 @@ class App extends React.Component {
 
 
   FoodListApi = () => {
-    const foodListUrl = `https://api.nal.usda.gov/fdc/v1/search?api_key=MuZ2F5P9sNM6L36BrEsIAziA2vdoH85VFFB5asBE&generalSearchInput=${this.state.searchTerm}`
+    const foodListUrl = `https://api.nal.usda.gov/fdc/v1/search?api_key=${API_KEY}&generalSearchInput=${this.state.searchTerm}`
     fetch(foodListUrl)
     .then(res => {
       return res.json()})
     .then(data => {
-      console.log(data)
+  
       this.setState({
         foods: data.foods,
 

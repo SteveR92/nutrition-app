@@ -1,5 +1,4 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField'
 import '../components/searchbar.css'
 
 class SearchBar extends React.Component {
@@ -22,19 +21,21 @@ class SearchBar extends React.Component {
     }
 
 
-    handleSubmit(e, text) {
-        this.props.handleSearchTerm(text);
+    handleSubmit = (e, text) => {
+      
         e.preventDefault()
-    
+        this.props.handleSearchTerm(text);    
     }
 
 
    
 
     render() {
+       
+
         return (
             <div className="search-bar-container">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} onSubmit={e => {e.preventDefault()}}>
        
             <input
                 className="food-search"

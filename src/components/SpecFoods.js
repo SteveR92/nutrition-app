@@ -5,6 +5,10 @@ import '../components/specfood.css'
 import '../components/table.css'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Button from '@material-ui/core/Button';
+import { green } from '@material-ui/core/colors';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
 import NoData from './NoData'
 
 export default class SpecFoods extends React.Component {
@@ -29,17 +33,31 @@ export default class SpecFoods extends React.Component {
     }
   }
 
-
  
+  render() {  
+    
+    const theme = createMuiTheme({
+      palette: {
 
-  
-  render() {
+        primary: green,
+      },
+    });
+
+
+
     if (this.state.noData === true) return <NoData />
     if (this.state.loaded === false) return <div><h1 className='status'>loading</h1></div>
     return (
       <div className="spec-foods">
+      <div className="button-container">
       <div className="back-button">
-        <Link to={`/`} className="link"><h2><FontAwesomeIcon className="icon" id="arrow-icon" icon={faArrowLeft} />Search New Food</h2></Link>
+        <Link to={`/`} className="link"><ThemeProvider theme={theme}>
+        <Button variant="contained" color="primary" className="search-new-button">
+        <FontAwesomeIcon className="icon" id="arrow-icon" icon={faArrowLeft} />
+          <span id="button-text">Search New Food</span>
+        </Button>
+      </ThemeProvider></Link>
+      </div>
       </div> 
       <div className="food-info">
         <h3>{this.state.food.description.toLowerCase()}</h3> 

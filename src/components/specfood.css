@@ -5,41 +5,71 @@
         padding: 0;
     }
 
-.back-button {
-    background-color: rgb(250, 229, 77);
-    padding-bottom: 5%;
-    transform: translateY(-20%);
-    margin: 0 auto;
-    margin-top: 5%;
-    font-size: 1.5em;
-    padding: 1em;
-    width: 200px;
-    height: 10px;  
-    padding-bottom: 1em;
+    .back-button {
+        padding: 5%;
+    }
+
+    .back-button {  
+
+        width: 250px;
+        display: block;
+        margin: 0 auto;  
+          
+    }
+
+    .search-new-button {
+        width: 250px;
+    }
+
+    h2, h3 {
+        color: white;
+        text-align: center;
+    }
+    
+    h3 {
+    
+        font-size: 1.3rem;
+    
+    }
+
+    .amounts {
+        text-align: right;
+    }
+
+
+.icon {
+    color: rgb(250, 229, 77);
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 2%;
+    margin-bottom: 0.5%;
+
+
 }
 
-.back-button h2 {
-    font-size: .8em;
-    transform: translateY(-100%);
-}
+#button-text {
+    color: white;
 }
 
+
+
+}
+
+@media only screen and (min-width: 601px) {
+
+
+.button-container {
+    width: 500px;
+    margin: 0 auto; 
+}
 
 
 .spec-foods {
     height: 100vh;
     width: 100vw;
     padding: 0;
-    position: absolute;
+
 }
-
-/* .table-container {
-    height: 100%;
-    display: block;
-} */
-
-
-
 
 .icon-container {
     text-align: center;
@@ -47,13 +77,14 @@
 
 .icon {
     color: rgb(250, 229, 77);
-
+    display: inline-block;
     font-size: 1.8rem;
-    padding: 2%;
-    border-radius: 50%;
+    padding: 1%;
+    margin-bottom: 0.5%;
 
-    transform: translateY(50%);
+
 }
+
 
 
 
@@ -77,9 +108,9 @@ h3 {
 #arrow-icon {
     font-size: 1em;
 
-    transform: translateY(15%);
-    background: white;
-    margin-right: 5%;
+    transform: translateY(0%);
+
+    margin-right: 3%;
 
 }
 
@@ -93,15 +124,33 @@ h3 {
     font-size: .9em;
 }
 
-@media only screen and (min-width: 992px) {
-    .icon {
-        color: rgb(250, 229, 77);
-    
-        font-size: 3rem;
 
-        border-radius: 50%;
-    
-        transform: translateY(50%);
+
+.back-button {  
+
+    width: 250px;
+    display: block;
+    margin: 0 auto;  
+      
+}
+
+.search-new-button {
+    width: 250px;
+}
+
+#button-text {
+    color: white;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 601px) {
+    .back-button {
+        padding-top: 5%;
     }
 
 }
