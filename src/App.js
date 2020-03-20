@@ -15,7 +15,9 @@ library.add(faAppleAlt, faArrowLeft)
 
 
 
+const API_KEY = `${process.env.REACT_APP_NUTRITION_APP_API_KEY}`
 
+console.log(API_KEY)
 
 class App extends React.Component {
   constructor() {
