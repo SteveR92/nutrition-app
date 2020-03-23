@@ -87,7 +87,7 @@ class App extends React.Component {
       <BrowserRouter>
       <div className="container" >
       <div className="top-container">
-      <h1><FontAwesomeIcon className="icon" id="homepage-icon" icon={faAppleAlt} /> Nutri-App</h1>
+      <div className="header"><FontAwesomeIcon className="icon" id="homepage-icon" icon={faAppleAlt} /><h1>Nutri-App</h1></div>
 
       </div>
       <div className="spec-food-container">

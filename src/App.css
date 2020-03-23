@@ -1,142 +1,42 @@
-@media only screen and (max-width: 600px) {
+
 .container {
   width: 100%;
+  height: 100vh;
   background-image: linear-gradient(to right, #56ab2f, #a8e063);
   background-attachment: fixed;
 
+
 }
-/* 
-.spec-food-container {
-  position: relative;
 
-} */
-
-h1 {
-  padding: 0;
-  margin: 0;
+.header {
   color: white;
   text-align: center;
-  padding-top: 3%;
-  font-size: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#homepage-icon {
-  transform: translateY(10%);
+.header h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
 }
+
+.icon {
+  color: rgb(250, 229, 77);
+  display: inline-block;
+  font-size: 2rem;
+  padding-top: 10px;
+
+} 
 
 .top-container {
   padding-top: 10%;
 }
 
+
+.status {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
 }
-
-@media only screen and (min-width: 601px) {
-
-  .container {
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(to right, #56ab2f, #a8e063);
-    background-attachment: fixed;
-  }
-  /* 
-  .spec-food-container {
-    position: relative;
-  
-  } */
-  
-  h1 {
-    padding: 0;
-    margin: 0;
-    color: white;
-    text-align: center;
-    padding-top: 3%;
-    font-size: 3.5em;
-  }
-  
-  #homepage-icon {
-    transform: translateY(10%);
-  }
-  
-  .top-container {
-    padding-top: 10%;
-  }
-  
-}
-
-
-@media only screen and (min-width: 992px) {
-  .container {
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(to right, #56ab2f, #a8e063);
-    background-attachment: fixed;
-
-  }
-  /* 
-  .spec-food-container {
-    position: relative;
-  
-  } */
-  
-  h1 {
-    padding: 0;
-    margin: 0;
-    color: white;
-    text-align: center;
-    padding-top: 3%;
-    font-size: 5rem;
-  }
-  
-  #homepage-icon {
-    transform: translateY(10%);
-  }
-  
-  .top-container {
-    padding-top: 10%;
-  }
-  
-  }
-  
-  @media only screen and (min-width: 601px) {
-    body {
-      background-image: linear-gradient(to right, #56ab2f, #a8e063);
-      background-attachment: fixed;
-    }
-
-    .not-mounted {
-      overflow: hidden;
-    }
-
-    .mounted {
-      overflow: visible;
-    }
-    .container {
-      height: 100vh;
-      width: 100vw;
-      background-image: linear-gradient(to right, #56ab2f, #a8e063);
-      background-attachment: fixed;
-    }
-
-    /* 
-    .spec-food-container {
-      position: relative;
-    
-    } */
-    
-    h1 {
-      padding: 0;
-      margin: 0;
-      color: white;
-      text-align: center;
-      padding-top: 3%;
-    }
-    
-    #homepage-icon {
-      transform: translateY(10%);
-    }
-    
-    .top-container {
-      padding-top: 10%;
-    }
-    
-    }

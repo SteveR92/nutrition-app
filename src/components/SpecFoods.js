@@ -53,8 +53,8 @@ export default class SpecFoods extends React.Component {
       <div className="back-button">
         <Link to={`/`} className="link"><ThemeProvider theme={theme}>
         <Button variant="contained" color="primary" className="search-new-button">
-        <FontAwesomeIcon className="icon" id="arrow-icon" icon={faArrowLeft} />
-          <span id="button-text">Search New Food</span>
+        <div className="header"><FontAwesomeIcon id="arrow-icon" icon={faArrowLeft} />
+          <span id="button-text">Search New Food</span></div>
         </Button>
       </ThemeProvider></Link>
       </div>
