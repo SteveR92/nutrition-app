@@ -6,9 +6,9 @@ import '../components/table.css'
 
 
 export default function FoodList(props) {
-
-  
-    const foods = props['searchResults']
+    console.log(props)
+    const foods = props.searchResults
+   
     const results = foods.slice(0, 10)
 
     let foodId = []

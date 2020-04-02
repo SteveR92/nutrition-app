@@ -24,13 +24,16 @@ export default class SpecFoods extends React.Component {
   async componentDidMount() {
     const response = await fetch(`https://api.nal.usda.gov/fdc/v1/${this.props.match.params.food_id}?api_key=MuZ2F5P9sNM6L36BrEsIAziA2vdoH85VFFB5asBE`)
     const json = await response.json()
-
+    if (!json.foodNutrients) {
+      this.setState({noData: true})
+    } else if (json.foodNutrients) {
     if (json.foodNutrients.length > 0) {
     this.setState({ food: json, loaded: true })
     } else {
 
       this.setState({noData: true})
     }
+  }
   }
 
  

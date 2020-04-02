@@ -48,7 +48,7 @@ class App extends React.Component {
     .then(res => {
       return res.json()})
     .then(data => {
-  
+   
       this.setState({
         foods: data.foods,
 
@@ -61,12 +61,6 @@ class App extends React.Component {
   }
 
 
-
-
-  // componentDidMount() {
-  //   this.FoodListApi()
-  // }
-
   componentDidUpdate(prevProps, prevState) {
 
     if (prevState.searchTerm !== this.state.searchTerm) {
@@ -74,9 +68,6 @@ class App extends React.Component {
       this.setState({ mounted: true })  
     }
   }
-
-  
-
 
 
   render() {
